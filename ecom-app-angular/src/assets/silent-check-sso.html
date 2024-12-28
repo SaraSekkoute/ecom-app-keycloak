@@ -1,0 +1,9 @@
+<!-- ce code agit comme une page constante qui informe la fenêtre parente de son URL actuelle. Cela ne change pas l'état de la page ni ne provoque de redirection,
+  mais sert uniquement à communiquer l'URL au parent. -->
+<html>
+  <body>
+    <script>
+      parent.postMessage(location.href, location.origin);
+    </script>
+  </body>
+</html>
